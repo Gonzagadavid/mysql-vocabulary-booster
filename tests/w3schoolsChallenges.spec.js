@@ -56,7 +56,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe('11 - Exibe todas as pessoas clientes **que possuem compatriotas**, mostrando a quantidade de compatriotas para cada pessoa cliente', () => {
+  describe.only('11 - Exibe todas as pessoas clientes **que possuem compatriotas**, mostrando a quantidade de compatriotas para cada pessoa cliente', () => {
     it('Verifica o desafio 11', async () => {
       const challengeQuery = readFileSync('desafio11.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult11');
