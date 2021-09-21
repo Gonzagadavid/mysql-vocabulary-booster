@@ -4,7 +4,7 @@
   "description": "Project MySQL Vocabulary Booster",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand",
+    "test": "jest --runInBand -restore",
     "test:watch": "jest --watchAll"
   },
   "repository": {
