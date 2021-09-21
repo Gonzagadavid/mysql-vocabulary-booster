@@ -47,7 +47,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe('10 - Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`', () => {
+  describe.only('10 - Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`', () => {
     it('Verifica o desafio 10', async () => {
       const challengeQuery = readFileSync('desafio10.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult10');
