@@ -92,7 +92,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe.only('12 - Faça um relatório que lista todas as pessoas funcionárias **que possuem o mesmo cargo**', () => {
+  describe('12 - Faça um relatório que lista todas as pessoas funcionárias **que possuem o mesmo cargo**', () => {
     it('Verifica o desafio 12', async () => {
       const challengeQuery = readFileSync('desafio12.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult12');
@@ -101,7 +101,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe('15 - Crie uma procedure chamada `buscar_media_por_cargo` que recebe como parâmetro o nome de um cargo e em retorno deve mostrar a média salarial de todas as pessoas que possuem esse cargo', () => {
+  describe.only('15 - Crie uma procedure chamada `buscar_media_por_cargo` que recebe como parâmetro o nome de um cargo e em retorno deve mostrar a média salarial de todas as pessoas que possuem esse cargo', () => {
     it('Verifica o desafio 15', async () => {
       const challengeQuery = readFileSync('desafio15.sql', 'utf8').trim();
       const createProcedureQuery = /CREATE PROCEDURE.*END/si.exec(challengeQuery)[0];
